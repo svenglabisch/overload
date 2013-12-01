@@ -4,9 +4,11 @@
 
 class Matrix {
 public:
-    int n;
+    int n = 0;
     Vector** x;
     Matrix(int n);
+    Matrix(Matrix& m);
+    Vector& operator[](const int i);
     ~Matrix();
 };
 
