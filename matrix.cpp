@@ -41,6 +41,30 @@ Matrix& Matrix::operator+(Matrix& y){
     return *m;
 };
 
+Matrix& Matrix::operator-(Matrix& y){
+    assert(this->n == y.n);
+    Matrix* m = new Matrix(y.n);
+    for(int i=0 ; i < y.n ; i++) {
+        for(int j=0 ; j < y.n ; j++) {
+            m->operator[](i)[j] = this->operator[](i)[j] - y[i][j];
+        }
+    }
+    
+    return *m;
+};
+
+Matrix& Matrix::operator*(Matrix& y){
+    assert(this->n == y.n);
+    Matrix* m = new Matrix(y.n);
+    for(int i=0 ; i < y.n ; i++) {
+        for(int j=0 ; j < y.n ; j++) {
+            m->operator[](i)[j] = this->operator[](i)[j] - y[i][j];
+        }
+    }
+    
+    return *m;
+};
+
 void Matrix::dump() {
     for (int i=0;i<n;i++)
         this->x[i]->dump();

@@ -10,6 +10,8 @@ public:
     Matrix(Matrix& m);
     Vector& operator[](const int i);
     Matrix& operator+(Matrix& y);
+    Matrix& operator-(Matrix& y);
+    Matrix& operator*(Matrix& y);
     ~Matrix();
     void dump();
 };

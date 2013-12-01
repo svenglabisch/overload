@@ -81,7 +81,6 @@ void test_matrix_plus_matrix(){
     assert(x[1][1] == -4);
 }
 
-
 void test_matrix_plus_matrix_2(){
     Matrix m(3);
     Matrix n(3);
@@ -102,6 +101,46 @@ void test_matrix_plus_matrix_2(){
     assert(x[1][1] == -4);
 }
 
+void test_matrix_mul_matrix(){
+    Matrix m(2);
+    Matrix n(2);
+    m[0][0]= 3;
+    m[0][1]= 4;
+    m[1][0]= 7;
+    m[1][1]=-3;
+    n[0][0]= 12;
+    n[0][1]= 44;
+    n[1][0]= 3;
+    n[1][1]= -1;
+    
+    Matrix x = m * n;
+    
+    assert(x[0][0] == -9);
+    assert(x[0][1] == -40);
+    assert(x[1][0] == 4);
+    assert(x[1][1] == -2);
+}
+
+void test_matrix_munis_matrix(){
+    Matrix m(2);
+    Matrix n(2);
+    m[0][0]= 3;
+    m[0][1]= 4;
+    m[1][0]= 7;
+    m[1][1]=-3;
+    n[0][0]= 12;
+    n[0][1]= 44;
+    n[1][0]= 3;
+    n[1][1]= -1;
+    
+    Matrix x = m - n;
+    
+    assert(x[0][0] == -9);
+    assert(x[0][1] == -40);
+    assert(x[1][0] == 4);
+    assert(x[1][1] == -2);
+}
+
 int main()
 {
     //test_Matrix_operator();
@@ -110,6 +149,8 @@ int main()
     //test_Vektor_minus_operstor();
     //test_Vektor_skalar_operstor();
     //test_Vektor_double_skalar_operstor();
+    test_matrix_mul_matrix();
+    test_matrix_munis_matrix();
     test_matrix_plus_matrix_2();
     test_matrix_plus_matrix();
     test_copy_construktor_vektor();
