@@ -9,6 +9,7 @@ CMakeFiles/projx.dir/matrix.cpp.o: matrix.cpp
 CMakeFiles/projx.dir/matrix.cpp.o: matrix.h
 CMakeFiles/projx.dir/matrix.cpp.o: vector.h
 
+CMakeFiles/projx.dir/vector.cpp.o: matrix.h
 CMakeFiles/projx.dir/vector.cpp.o: vector.cpp
 CMakeFiles/projx.dir/vector.cpp.o: vector.h
 

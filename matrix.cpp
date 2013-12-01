@@ -65,6 +65,7 @@ Matrix& Matrix::operator*(Matrix& y){
     return *m;
 };
 
+
 void Matrix::dump() {
     for (int i=0;i<n;i++)
         this->x[i]->dump();

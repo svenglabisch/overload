@@ -65,6 +65,17 @@ Vector Vector::operator*(double dx) {
     return c;
 }
 
+Vector Vector::operator*(Matrix& m) {
+    assert(this->n == m.n);
+    Vector c(this->n);
+    for(int zeilen=0; zeilen<this->n; zeilen++){
+        for(int spalten=0; spalten<this->n; spalten++){
+                c[zeile] = c[zeile] + (m[zeilen][spalten] * this->x[zeile]);
+        }
+    }
+    return c;
+}
+
 Vector& Vector::operator=(double y) {   //noch net gebaut, was soll das machen?
     return *this;
 }

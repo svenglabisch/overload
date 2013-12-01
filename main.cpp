@@ -191,6 +191,22 @@ void test_vektor_mul_double(){
     assert(tmp[1] == 8.0);
 }
 
+void test_matrix_mul_vektor() {
+    Matrix m(2);
+    m[0][0] = 2;
+    m[0][1] = 3;
+    m[1][0] = 4;
+    m[1][1] = 5;
+    
+    Vector v(2);
+    v[0] = 2;
+    v[1] = 4;
+    
+    Vector tmp = v * m;
+    assert(tmp[0] == 12);
+    assert(tmp[1] == 32);
+}
+
 int main()
 {
     
@@ -207,6 +223,7 @@ int main()
     test_vektor_plus();
     test_vektor_mul();
     test_vektor_mul_double();
+    test_matrix_mul_vektor();
     
     test_copy_construktor_vektor();
     test_copy_construktior_matrix();
