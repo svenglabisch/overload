@@ -6,7 +6,24 @@ void test_construktior_matrix(){
     int n=3;
     Matrix m1(n);
     Matrix m2(n);
-    //assert(n==m1.n);
+    assert(n == m1.n);
+    assert(n == m2.n);
+}
+
+void test_copy_construktor_vektor(){
+    Vector v(3);
+    v[0]=1;
+    v[1]=2;
+    v[2]=3;
+    assert(v[0] == 1);
+    assert(v[1] == 2);
+    assert(v[2] == 3);
+    
+    Vector v2(v);
+    assert(v2[0] == 1);
+    assert(v2[1] == 2);
+    assert(v2[2] == 3);
+    
 }
 
 void test_copy_construktior_matrix(){
@@ -53,7 +70,7 @@ int main()
     //test_Vektor_skalar_operstor();
     //test_Vektor_double_skalar_operstor();
     //test_matrix_plus_matrix();
-    //test_copy_construktor_vektor();
+    test_copy_construktor_vektor();
     test_copy_construktior_matrix();
     test_construktior_matrix();
     return 0;
