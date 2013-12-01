@@ -51,6 +51,15 @@ double Vector::operator*(const Vector& x) {
     return d;
 }
 
+double Vector::norm(const Vector& y){
+    double n=0;
+    for(int i=0; i<y.n; i++){
+        n = n + y.x[i];
+    }
+    n = sqrt(n);
+    return n;
+}
+
 Vector Vector::operator-(const Vector y){
     assert(this->n==y.n);
     Vector c(y.n);

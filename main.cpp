@@ -187,6 +187,11 @@ void test_matrix_mul_vektor() {
     assert(tmp[1] == 28);
 }
 
+void test_norm_vector(){
+    Vector v(4);
+    assert(Vector::norm(v)==0);
+}
+
 int main()
 {
     
@@ -203,6 +208,7 @@ int main()
     test_vektor_mul();
     test_vektor_mul_double();
     test_matrix_mul_vektor();
+    test_norm_vector();
     
     test_copy_construktor_vektor();
     test_copy_construktior_matrix();

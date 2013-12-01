@@ -16,6 +16,7 @@ public:
     double operator*(const Vector& x);
     Vector operator*(double dx);
     double& operator[](const int i);
+    double static norm(const Vector& y);
     void dump() const;
 
 };
