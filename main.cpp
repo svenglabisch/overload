@@ -189,7 +189,11 @@ void test_matrix_mul_vektor() {
 
 void test_norm_vector(){
     Vector v(4);
-    assert(Vector::norm(v)==0);
+    v[0]=2;
+    v[1]=2;
+    v[2]=2;
+    v[3]=2;
+    assert(Vector::norm(v)==4);
 }
 
 int main()

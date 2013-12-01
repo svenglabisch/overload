@@ -54,7 +54,7 @@ double Vector::operator*(const Vector& x) {
 double Vector::norm(const Vector& y){
     double n=0;
     for(int i=0; i<y.n; i++){
-        n = n + y.x[i];
+        n = n + y.x[i]*y.x[i];
     }
     n = sqrt(n);
     return n;
