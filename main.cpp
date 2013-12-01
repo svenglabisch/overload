@@ -196,7 +196,7 @@ void test_norm_vector(){
     assert(Vector::norm(v)==4);
 }
 
-void test_norm_matri(){
+void test_norm_matrix(){
     Matrix m(2);
     m[0][0]=2;
     m[0][1]=2;
@@ -205,10 +205,7 @@ void test_norm_matri(){
     assert(Matrix::norm(m)==4);
 }
 
-int main()
-{
-    
-    
+int main() {
     test_matrix_munis_matrix();
     test_matrix_plus_matrix_2();
     test_matrix_plus_matrix();    
@@ -218,7 +215,7 @@ int main()
     test_vektor_mul_double();
     test_matrix_mul_vektor();
     test_norm_vector();
-    test_norm_matri();
+    test_norm_matrix();
     test_copy_construktor_vektor();
     test_copy_construktior_matrix();
     test_construktior_matrix();
