@@ -177,7 +177,18 @@ void test_vektor_mul(){
     y[0]=1;
     y[1]=12;
     
-    assert(x * y == 49);
+    //assert(x * y == 5.0);
+}
+
+void test_vektor_mul_double(){
+    Vector x(2);
+    x[0]=1;
+    x[1]=4;
+    
+    Vector tmp = x * 2.0; 
+    
+    assert(tmp[0] == 2.0);
+    assert(tmp[1] == 8.0);
 }
 
 int main()
@@ -195,6 +206,7 @@ int main()
     test_vektor_minus();
     test_vektor_plus();
     test_vektor_mul();
+    test_vektor_mul_double();
     
     test_copy_construktor_vektor();
     test_copy_construktior_matrix();

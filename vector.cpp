@@ -42,30 +42,25 @@ Vector Vector::operator+(const Vector y){
     return c;
 }
 
-Vector Vector::operator*(const Vector y){
-    assert(this->n==y.n);
-    Vector c(y.n);
-    double d=0;
-    for(int i=0; i<n;i++){
-        c[i]=this->x[i]*y.x[i];
-        d=d+c[i];
-    }
-    std::cout << d << std::endl;
-    return d;
+/*
+double operator*(const Vector& x) {
+    return 5.0;
 }
-
-Vector Vector::operator*(double y){
-    for(int i=0 ; i < this->n; i++){
-        this->x[i]=x[i]*y;
-    }
-    return *this;
-}
+ */
 
 Vector Vector::operator-(const Vector y){
     assert(this->n==y.n);
     Vector c(y.n);
     for(int i=0;i<n;i++){
         c[i]=this->x[i]-y.x[i];
+    }
+    return c;
+}
+
+Vector Vector::operator*(double dx) {
+    Vector c(this->n);
+    for(int i=0; i<this->n; i++){
+        c[i]=this->x[i] * dx;
     }
     return c;
 }

@@ -14,29 +14,9 @@ matrix.h
 assert.h
 -
 
-/home/dev/proj/cpp/overload/matrix.cpp
-matrix.h
 /home/dev/proj/cpp/overload/matrix.h
 vector.h
 /home/dev/proj/cpp/overload/vector.h
-cmath
--
-assert.h
--
-
-/home/dev/proj/cpp/overload/matrix.h
-vector.h
-/home/dev/proj/cpp/overload/vector.h
-
-/home/dev/proj/cpp/overload/vector.cpp
-vector.h
-/home/dev/proj/cpp/overload/vector.h
-iostream
--
-assert.h
--
-cmath
--
 
 /home/dev/proj/cpp/overload/vector.h
 
