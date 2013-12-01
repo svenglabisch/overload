@@ -155,7 +155,8 @@ void test_vektor_mul(){
     y[0]=1;
     y[1]=12;
     
-    //assert(x * y == 5.0);
+    
+    assert(x * y == 49);
 }
 
 void test_vektor_mul_double(){
@@ -191,7 +192,7 @@ int main()
     
     //test_Vektor_skalar_operstor();
     //test_Vektor_double_skalar_operstor();
-    if(false) {
+    if(true) {
         test_matrix_munis_matrix();
         test_matrix_plus_matrix_2();
         test_matrix_plus_matrix();

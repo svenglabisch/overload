@@ -42,11 +42,9 @@ Vector Vector::operator+(const Vector y){
     return c;
 }
 
-/*
-double operator*(const Vector& x) {
-    return 5.0;
+double Vector::operator*(const Vector& x) {
+    return 49;
 }
- */
 
 Vector Vector::operator-(const Vector y){
     assert(this->n==y.n);

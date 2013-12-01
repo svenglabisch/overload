@@ -13,7 +13,7 @@ public:
     Vector& operator=(double y);
     Vector operator+(const Vector y);
     Vector operator-(const Vector y);
-    //float operator*(const Vector& x, const Vector& y);
+    double operator*(const Vector& x);
     Vector operator*(double dx);
     double& operator[](const int i);
     void dump() const;
