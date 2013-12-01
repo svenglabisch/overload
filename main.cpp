@@ -156,12 +156,33 @@ void test_vektor_minus(){
     assert(tmp[1] == -8);
 }
 
+void test_vektor_plus(){
+    Vector x(2);
+    Vector y(2);
+    x[0]=1;
+    x[1]=4;
+    y[0]=1;
+    y[1]=12;
+    
+    Vector tmp = x + y;
+    assert(tmp[0] == 2);
+    assert(tmp[1] == 16);
+}
+
+void test_vektor_mul(){
+    Vector x(2);
+    Vector y(2);
+    x[0]=1;
+    x[1]=4;
+    y[0]=1;
+    y[1]=12;
+    
+    assert(x * y == 49);
+}
+
 int main()
 {
-    //test_Matrix_operator();
-    //test_Vektor_operator();
-    //test_Vektor_plus_operstor();
-    //test_Vektor_minus_operstor();
+    
     //test_Vektor_skalar_operstor();
     //test_Vektor_double_skalar_operstor();
     if(false) {
@@ -172,6 +193,8 @@ int main()
     }
     
     test_vektor_minus();
+    test_vektor_plus();
+    test_vektor_mul();
     
     test_copy_construktor_vektor();
     test_copy_construktior_matrix();
