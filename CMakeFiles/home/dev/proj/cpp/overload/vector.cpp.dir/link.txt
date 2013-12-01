@@ -1,1 +1,0 @@
-/usr/bin/c++       -static CMakeFiles//home/dev/proj/cpp/overload/vector.cpp.dir/matrix.cpp.o CMakeFiles//home/dev/proj/cpp/overload/vector.cpp.dir/main.cpp.o  -o home/dev/proj/cpp/overload/vector.cpp -rdynamic 
