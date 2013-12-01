@@ -5,18 +5,19 @@
 
 
 Matrix::Matrix(int n){
+    assert(n > 1);
     this->n = n;
     this->x = new Vector*[n];
     for (int i=  0; i < n; i++){
-        this->x[i] = new Vector(n);
+        this->x[i];
     }
 }
     
 Matrix::~Matrix() {
     for(int i=0; i < this->n; i++){
-        delete this->x[i];
+        //delete this->x[i];
     }
-    delete this->x;
+    //delete this->x;
 }
 
 Matrix::Matrix(Matrix& m){

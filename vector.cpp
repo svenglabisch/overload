@@ -17,6 +17,7 @@ Vector::~Vector() {
 }
     
 Vector::Vector(const Vector& y) {
+    return;
     this->n = y.n;
     this->x = new double[this->n];
     for (int i=0; i < this->n; i++)

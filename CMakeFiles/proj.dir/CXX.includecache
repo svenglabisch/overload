@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dev/proj/cpp/overload/matrix.cpp
+matrix.h
+/home/dev/proj/cpp/overload/matrix.h
+vector.h
+/home/dev/proj/cpp/overload/vector.h
+cmath
+-
+assert.h
+-
+
+/home/dev/proj/cpp/overload/matrix.h
+vector.h
+/home/dev/proj/cpp/overload/vector.h
+
+/home/dev/proj/cpp/overload/vector.h
+
