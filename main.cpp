@@ -5,6 +5,7 @@
 void test_construktior_matrix(){
     int n=3;
     Matrix m1(n);
+    Matrix m2(n);
     //assert(n==m1.n);
 }
 
