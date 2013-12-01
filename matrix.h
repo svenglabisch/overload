@@ -14,6 +14,7 @@ public:
     Matrix& operator-(Matrix& y);
     //Matrix& operator*(Matrix& y);
     Vector& operator*(Vector& m);
+    double static norm(const Matrix& m);
     ~Matrix();
     void dump();
 };

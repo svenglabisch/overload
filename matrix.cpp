@@ -80,6 +80,18 @@ Vector& Matrix::operator*(Vector& m) {
     return *c;
 }
 
+double Matrix::norm(const Matrix& y){
+    double n=0;
+    for(int i=0; i<y.n; i++){
+        for(int j=0; j<y.n; j++){
+            double fuckyou=y.x[i]->operator[](j);
+            n = n + fuckyou * fuckyou;
+        }
+    }
+    n = sqrt(n);
+    return n;
+}
+
 void Matrix::dump() {
     for (int i=0;i<n;i++)
         this->x[i]->dump();

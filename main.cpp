@@ -196,12 +196,21 @@ void test_norm_vector(){
     assert(Vector::norm(v)==4);
 }
 
+void test_norm_matri(){
+    Matrix m(2);
+    m[0][0]=2;
+    m[0][1]=2;
+    m[1][0]=2;
+    m[1][1]=2;
+    assert(Matrix::norm(m)==4);
+}
+
 int main()
 {
     
     //test_Vektor_skalar_operstor();
     //test_Vektor_double_skalar_operstor();
-    if(true) {
+    if(false) {
         test_matrix_munis_matrix();
         test_matrix_plus_matrix_2();
         test_matrix_plus_matrix();
@@ -213,6 +222,7 @@ int main()
     test_vektor_mul_double();
     test_matrix_mul_vektor();
     test_norm_vector();
+    test_norm_matri();
     
     test_copy_construktor_vektor();
     test_copy_construktior_matrix();
