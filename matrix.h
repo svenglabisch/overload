@@ -9,7 +9,9 @@ public:
     Matrix(int n);
     Matrix(Matrix& m);
     Vector& operator[](const int i);
+    Matrix& operator+(Matrix& y);
     ~Matrix();
+    void dump();
 };
 
 #endif /* defined(__overload__matrix__) */
