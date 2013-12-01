@@ -143,6 +143,19 @@ void test_matrix_munis_matrix(){
     assert(x[1][1] == -2);
 }
 
+void test_vektor_minus(){
+    Vector x(2);
+    Vector y(2);
+    x[0]=1;
+    x[1]=4;
+    y[0]=1;
+    y[1]=12;
+    
+    Vector tmp = x - y;
+    assert(tmp[0] == 0);
+    assert(tmp[1] == -8);
+}
+
 int main()
 {
     //test_Matrix_operator();
@@ -157,6 +170,8 @@ int main()
         test_matrix_plus_matrix_2();
         test_matrix_plus_matrix();
     }
+    
+    test_vektor_minus();
     
     test_copy_construktor_vektor();
     test_copy_construktior_matrix();
