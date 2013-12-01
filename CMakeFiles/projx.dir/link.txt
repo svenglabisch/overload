@@ -1,0 +1,1 @@
+/usr/bin/c++   -g    CMakeFiles/projx.dir/main.cpp.o CMakeFiles/projx.dir/matrix.cpp.o CMakeFiles/projx.dir/vector.cpp.o  -o projx -rdynamic 

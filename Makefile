@@ -99,24 +99,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named proj
+# Target rules for targets named projx
 
 # Build rule for target.
-proj: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 proj
-.PHONY : proj
+projx: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 projx
+.PHONY : projx
 
 # fast build rule for target.
-proj/fast:
-	$(MAKE) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/build
-.PHONY : proj/fast
+projx/fast:
+	$(MAKE) -f CMakeFiles/projx.dir/build.make CMakeFiles/projx.dir/build
+.PHONY : projx/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/projx.dir/build.make CMakeFiles/projx.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -124,7 +124,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/projx.dir/build.make CMakeFiles/projx.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -132,7 +132,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/projx.dir/build.make CMakeFiles/projx.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 matrix.o: matrix.cpp.o
@@ -140,7 +140,7 @@ matrix.o: matrix.cpp.o
 
 # target to build an object file
 matrix.cpp.o:
-	$(MAKE) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/matrix.cpp.o
+	$(MAKE) -f CMakeFiles/projx.dir/build.make CMakeFiles/projx.dir/matrix.cpp.o
 .PHONY : matrix.cpp.o
 
 matrix.i: matrix.cpp.i
@@ -148,7 +148,7 @@ matrix.i: matrix.cpp.i
 
 # target to preprocess a source file
 matrix.cpp.i:
-	$(MAKE) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/matrix.cpp.i
+	$(MAKE) -f CMakeFiles/projx.dir/build.make CMakeFiles/projx.dir/matrix.cpp.i
 .PHONY : matrix.cpp.i
 
 matrix.s: matrix.cpp.s
@@ -156,7 +156,7 @@ matrix.s: matrix.cpp.s
 
 # target to generate assembly for a file
 matrix.cpp.s:
-	$(MAKE) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/matrix.cpp.s
+	$(MAKE) -f CMakeFiles/projx.dir/build.make CMakeFiles/projx.dir/matrix.cpp.s
 .PHONY : matrix.cpp.s
 
 vector.o: vector.cpp.o
@@ -164,7 +164,7 @@ vector.o: vector.cpp.o
 
 # target to build an object file
 vector.cpp.o:
-	$(MAKE) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/vector.cpp.o
+	$(MAKE) -f CMakeFiles/projx.dir/build.make CMakeFiles/projx.dir/vector.cpp.o
 .PHONY : vector.cpp.o
 
 vector.i: vector.cpp.i
@@ -172,7 +172,7 @@ vector.i: vector.cpp.i
 
 # target to preprocess a source file
 vector.cpp.i:
-	$(MAKE) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/vector.cpp.i
+	$(MAKE) -f CMakeFiles/projx.dir/build.make CMakeFiles/projx.dir/vector.cpp.i
 .PHONY : vector.cpp.i
 
 vector.s: vector.cpp.s
@@ -180,7 +180,7 @@ vector.s: vector.cpp.s
 
 # target to generate assembly for a file
 vector.cpp.s:
-	$(MAKE) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/vector.cpp.s
+	$(MAKE) -f CMakeFiles/projx.dir/build.make CMakeFiles/projx.dir/vector.cpp.s
 .PHONY : vector.cpp.s
 
 # Help Target
@@ -190,7 +190,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... proj"
+	@echo "... projx"
 	@echo "... rebuild_cache"
 	@echo "... main.o"
 	@echo "... main.i"

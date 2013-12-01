@@ -116,7 +116,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=proj
+CMAKE_PROJECT_NAME:STATIC=projx
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -160,6 +160,12 @@ proj_BINARY_DIR:STATIC=/home/dev/proj/cpp/overload
 
 //Value Computed by CMake
 proj_SOURCE_DIR:STATIC=/home/dev/proj/cpp/overload
+
+//Value Computed by CMake
+projx_BINARY_DIR:STATIC=/home/dev/proj/cpp/overload
+
+//Value Computed by CMake
+projx_SOURCE_DIR:STATIC=/home/dev/proj/cpp/overload
 
 
 ########################
