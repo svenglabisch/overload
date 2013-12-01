@@ -152,11 +152,11 @@ void test_vektor_mul(){
     Vector y(2);
     x[0]=1;
     x[1]=4;
-    y[0]=1;
+    y[0]=8;
     y[1]=12;
     
     
-    assert(x * y == 49);
+    assert(x * y == 56);
 }
 
 void test_vektor_mul_double(){

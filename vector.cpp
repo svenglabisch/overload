@@ -43,7 +43,12 @@ Vector Vector::operator+(const Vector y){
 }
 
 double Vector::operator*(const Vector& x) {
-    return 49;
+    assert(this->n==x.n);
+    double d=0;
+    for(int i=0;i<x.n;i++){
+        d=d+this->operator[](i)*x.x[i];
+    }
+    return d;
 }
 
 Vector Vector::operator-(const Vector y){

@@ -6,15 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/dev/proj/cpp/overload/vector.cpp
+/home/dev/proj/cpp/overload/main.cpp
 vector.h
 /home/dev/proj/cpp/overload/vector.h
-iostream
--
+matrix.h
+/home/dev/proj/cpp/overload/matrix.h
 assert.h
 -
-cmath
--
+
+/home/dev/proj/cpp/overload/matrix.h
+vector.h
+/home/dev/proj/cpp/overload/vector.h
 
 /home/dev/proj/cpp/overload/vector.h
 
