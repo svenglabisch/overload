@@ -52,7 +52,7 @@ Matrix& Matrix::operator-(Matrix& y){
     
     return *m;
 };
-
+/*
 Matrix& Matrix::operator*(Matrix& y){
     assert(this->n == y.n);
     Matrix* m = new Matrix(y.n);
@@ -64,7 +64,21 @@ Matrix& Matrix::operator*(Matrix& y){
     
     return *m;
 };
+ * */
 
+
+Vector& Matrix::operator*(Vector& m) {
+    assert(this->n == m.n);
+    Vector* c = new Vector(this->n);
+    for(int zeile=0; zeile<this->n; zeile++){
+        for(int spalte=0; spalte<this->n; spalte++){
+            double vector_zeile = m[spalte];
+            double matrix_foo = this->x[zeile]->operator[](spalte);
+            c->operator[](zeile) = c->operator[](zeile) + (vector_zeile * matrix_foo);
+        }
+    }
+    return *c;
+}
 
 void Matrix::dump() {
     for (int i=0;i<n;i++)

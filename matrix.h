@@ -12,7 +12,8 @@ public:
     Vector& operator[](const int i);
     Matrix& operator+(Matrix& y);
     Matrix& operator-(Matrix& y);
-    Matrix& operator*(Matrix& y);
+    //Matrix& operator*(Matrix& y);
+    Vector& operator*(Vector& m);
     ~Matrix();
     void dump();
 };
