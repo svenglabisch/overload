@@ -208,14 +208,10 @@ void test_norm_matri(){
 int main()
 {
     
-    //test_Vektor_skalar_operstor();
-    //test_Vektor_double_skalar_operstor();
-    if(false) {
-        test_matrix_munis_matrix();
-        test_matrix_plus_matrix_2();
-        test_matrix_plus_matrix();
-    }
     
+    test_matrix_munis_matrix();
+    test_matrix_plus_matrix_2();
+    test_matrix_plus_matrix();    
     test_vektor_minus();
     test_vektor_plus();
     test_vektor_mul();
@@ -223,7 +219,6 @@ int main()
     test_matrix_mul_vektor();
     test_norm_vector();
     test_norm_matri();
-    
     test_copy_construktor_vektor();
     test_copy_construktior_matrix();
     test_construktior_matrix();
